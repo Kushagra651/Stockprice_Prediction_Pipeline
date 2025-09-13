@@ -1,0 +1,42 @@
+project:
+  name: Stock Price Prediction
+  description: Predicting stock prices using machine learning techniques.
+  author: bkushagra981@gmail.com
+  version: 1.0
+
+data:
+  source: 
+    - Yahoo Finance
+    - Alpha Vantage
+  format: CSV
+  features:
+    - Date
+    - Open
+    - High
+    - Low
+    - Close
+    - Volume
+  target: Close
+
+preprocessing:
+  steps:
+    - Handle missing values
+    - Feature scaling
+    - Train-test split
+
+model:
+  type: LSTM
+  framework: TensorFlow
+  parameters:
+    epochs: 50
+    batch_size: 32
+    learning_rate: 0.001
+
+evaluation:
+  metrics:
+    - Mean Squared Error
+    - Mean Absolute Error
+
+output:
+  predictions_file: predictions.csv
+  model_file: stock_price_model.h5

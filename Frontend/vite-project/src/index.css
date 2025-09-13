@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* FINSTOCK Design System - Dark Financial Theme
+All colors are HSL for semantic design tokens
+*/
+
+@layer base {
+  :root {
+    /* Core dark theme - FINSTOCK brand */
+    --background: 222 84% 4.9%; /* #0F172A - deep charcoal/navy */
+    --foreground: 210 40% 88%; /* #E2E8F0 - light gray text */
+
+    /* Card backgrounds - slightly lighter than main bg */
+    --card: 222 47% 8%; /* Darker card background */
+    --card-foreground: 210 40% 88%;
+
+    --popover: 222 47% 8%;
+    --popover-foreground: 210 40% 88%;
+
+    /* Brand blue accent - #3B82F6 */
+    --primary: 217 91% 60%; /* Blue accent for CTA buttons */
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary elements */
+    --secondary: 222 47% 11%;
+    --secondary-foreground: 210 40% 88%;
+
+    --muted: 222 47% 11%;
+    --muted-foreground: 215 16% 57%;
+
+    /* Accent blue for highlights */
+    --accent: 217 91% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Financial red for negative trends - #EF4444 */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Financial green for positive trends - #10B981 */
+    --success: 158 64% 52%;
+    --success-foreground: 0 0% 100%;
+
+    /* Borders and inputs */
+    --border: 222 47% 11%;
+    --input: 222 47% 11%;
+    --ring: 217 91% 60%;
+
+    /* FINSTOCK Gradients and animations */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(217 91% 70%));
+    --gradient-success: linear-gradient(135deg, hsl(158 64% 52%), hsl(158 64% 62%));
+    --gradient-chart: linear-gradient(180deg, hsl(217 91% 60% / 0.2), transparent);
+    
+    /* Financial chart colors */
+    --chart-primary: 217 91% 60%; /* Blue for main charts */
+    --chart-grid: 222 47% 15%; /* Subtle grid lines */
+    --chart-text: 215 16% 57%; /* Chart labels */
+    
+    /* Glows and shadows */
+    --glow-primary: 0 0 30px hsl(217 91% 60% / 0.3);
+    --shadow-card: 0 4px 20px hsl(222 84% 4.9% / 0.5);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.75rem;
+  }
+
+  /* Remove old dark mode - we're using dark by default */
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}

@@ -1,0 +1,13 @@
+pandas
+numpy 
+matplotlib
+scikit-learn
+seaborn
+flask
+lstm
+streamlit
+ipykernel
+tensorflow
+yfinance
+keras
+pandas_datareader

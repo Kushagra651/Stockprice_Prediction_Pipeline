@@ -1,0 +1,9 @@
+#the environment files
+venv/
+#Python bytecode files
+__pycache__/
+*.py[cod]
+#Jupyter Notebook checkpoints
+.ipynb_checkpoints
+#VSCode settings
+.vscode/
